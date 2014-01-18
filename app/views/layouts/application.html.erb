@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InamScientific</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="brand" href= '/'>Inam Scientific </a>
+          <div class="nav-collapse" style="text-align: right">
+            <ul class="nav" >
+              <li><%= link_to "About Us",about_us_path,:class => 'pull-right' %></li>
+              <li><%= link_to "Our Partners",partners_path %></li>
+              <li><%= link_to "Our Team",team_path %></li>
+              <li><%= link_to "Contact Us",contact_us_path %></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="padding-left: 5%; padding-right: 5%">
+    <%= yield %>
+    </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row-fluid">
+
+
+            <div class="span4">
+              <ul class="footer-links unstyled" id="footer-Make">
+                <li><h4>Used Cars By City</h4></li>
+                <li><a href="/used-cars/search/-/ct_faisalabad/" id="footer_Faisalabad" title="Cars for Sale in Faisalabad">Cars for Sale in Faisalabad</a></li>
+                <li><a href="/used-cars/search/-/ct_islamabad/" id="footer_Islamabad" title="Cars for Sale in Islamabad">Cars for Sale in Islamabad</a></li>
+                <li><a href="/used-cars/search/-/ct_karachi/" id="footer_Karachi" title="Cars for Sale in Karachi">Cars for Sale in Karachi</a></li>
+                <li><a href="/used-cars/search/-/ct_lahore/" id="footer_Lahore" title="Cars for Sale in Lahore">Cars for Sale in Lahore</a></li>
+                <li><a href="/used-cars/search/-/ct_peshawar/" id="footer_Peshawar" title="Cars for Sale in Peshawar">Cars for Sale in Peshawar</a></li>
+                <li><a href="/used-cars/search/-/ct_quetta/" id="footer_Quetta" title="Cars for Sale in Quetta">Cars for Sale in Quetta</a></li>
+              </ul>
+            </div>
+            <div class="span4">
+              <ul class="footer-links unstyled">
+                <h4>Head Office</h4>
+                <div class="contact-info-wrap">
+                  <p>Inam Scientific</p>			
+                  <p><span class="icon-text icon-phone">+92-42-37234813 / +92-42-37361740</span>pr</p>
+                  <p><a href="mailto:info@primechemicalscientific.com" class="icon-text icon-mail">info@primechemicalscientific.com</a></p>			
+                  <p><a href="www.primechemicalscientific.com" target="_blank" class="icon-text icon-link">www.primechemicalscientific.com</a></p>		
+                  <p><span class="icon-text icon-map-marker">Scientific Trade Center, 22-Abkari Road, New Anarkali,  Lahore, Punjab, Pakistan</span></p>									
+                </div>
+              </ul>
+            </div>
+            <div class="span4 footer-social">
+              <h3>Follow Us</h3>
+              <ul class="networks networks-footer">
+                <li>
+                  <a href="http://www.twitter.com/pakwheels" class="twitter" rel="nofollow" target="_blank" title="Follow Us On Twitter"><i class="icon icon-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="http://www.facebook.com/pakwheels" class="facebook" rel="nofollow" target="_blank" title="Follow Us On Facebook"><i class="icon icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/117392751510646293237" class="googleplus" rel="nofollow" target="_blank" title="Follow Us On Google Plus"><i class="icon icon-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="http://pinterest.com/pakwheels/" class="pinterest" rel="nofollow" target="_blank" title="Follow Us On Pinterest"><i class="icon icon-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="http://www.youtube.com/pakwheels" class="youtube" rel="nofollow" target="_blank" title="Follow Us On Youtube"><i class="icon icon-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+ 
+
+
+  </div>
+</div>
+</body>
+</html>
