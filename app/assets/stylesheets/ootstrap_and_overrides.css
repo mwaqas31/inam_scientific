@@ -8,9 +8,17 @@
 body { padding-top: 120px; padding-bottom: 20px; font-family: sans-serif } 
 p {font-size: 16px;}
 h2 {font-size: 24px;}
-.navbar .navbar-inner .container { height: 80px; font-size: 15px; padding-top: 20px; text-align: right; float: right; }
+.navbar .navbar-inner .container { height: 80px; font-size: 20px; padding-top: 20px;  float: right; }
+.navbar .navbar-inner { 
+ background: #005fdb
+background: -webkit-linear-gradient(red, blue); /* For Safari */
+background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#005bab, blue); /* Standard syntax (must be last) */
 
 
+
+}
 
 .footer {
 background: #3a3e45;
@@ -21,4 +29,10 @@ font-size: 12px;
 }
 .footer-links{
     
+}
+.nav {
+	padding: 10px 20px 20px 200px;
+	font-family: sans-serif;
+	color: #005;
+
 }

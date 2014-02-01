@@ -20,7 +20,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+gem 'rails_12factor', group: :production
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -52,3 +52,4 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+ruby '2.0.0'
